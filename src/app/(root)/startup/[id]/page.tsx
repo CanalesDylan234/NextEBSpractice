@@ -7,6 +7,7 @@ import React from 'react'
 import Image from 'next/image';
 
 import markdownit from 'markdown-it';
+
 const md = markdownit();
 
 export const experimental_ppr = true;
