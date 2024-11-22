@@ -9,7 +9,16 @@ const nextConfig: NextConfig = {
         hostname: '*',
       }
     ]
-  }
+  },
+  // Using ppr for incremental builds to improve performance and reduce build times.
+  experimental: {
+    ppr: 'incremental',
+  },
+  devIndicators: {
+    appIsrStatus: true,
+    buildActivity: true,
+    buildActivityPosition: 'bottom-right',
+  },
 };
 
 export default nextConfig;
